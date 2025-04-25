@@ -1,0 +1,21 @@
+Data,Tipo,Descrição,Categoria,Valor,Forma de Pagamento,Fixo?,Observações
+05/02/2025,Entrada,Salário Mensal,Renda Fixa,3500.0,Transferência,Sim,Salário fixo CLT
+10/02/2025,Saída,Aluguel,Moradia,1200.0,PIX,Sim,Pago no dia 10
+12/02/2025,Saída,Mercado,Alimentação,420.0,Cartão Débito,Não,Compras do mês
+14/02/2025,Saída,Plano de Saúde,Saúde,280.0,Boleto,Sim,Plano básico
+15/02/2025,Saída,Netflix,Assinaturas,39.9,Cartão de Crédito,Sim,Mensalidade Netflix
+18/02/2025,Saída,Gasolina,Transporte,160.0,Cartão Débito,Não,Abastecimento
+20/02/2025,Entrada,Freelancer,Renda Extra,750.0,Transferência,Não,Projeto pontual
+22/02/2025,Saída,Veterinário,Animais,150.0,PIX,Não,Consulta para gato
+25/02/2025,Entrada,Rendimento Tesouro,Investimento,95.23,Transferência,Não,Rendimento do mês
+28/02/2025,Saída,Cinema,Lazer,60.0,Cartão Crédito,Não,Filme no cinema
+05/03/2025,Entrada,Salário Mensal,Renda Fixa,3500.0,Transferência,Sim,Salário fixo CLT
+10/03/2025,Saída,Aluguel,Moradia,1200.0,PIX,Sim,Pago no dia 10
+13/03/2025,Saída,Mercado,Alimentação,450.0,Cartão Débito,Não,Compras do mês
+15/03/2025,Saída,Spotify,Assinaturas,19.9,Cartão de Crédito,Sim,Mensalidade Spotify
+17/03/2025,Saída,Ônibus,Transporte,80.0,Dinheiro,Não,Transporte urbano
+20/03/2025,Entrada,Venda Brechó,Renda Extra,120.0,PIX,Não,Roupas usadas
+21/03/2025,Saída,Livro IA,Educação,89.9,Cartão Crédito,Não,Livro técnico
+25/03/2025,Entrada,Rendimento Tesouro,Investimento,98.1,Transferência,Não,Rendimento do mês
+26/03/2025,Saída,Pet Shop,Animais,70.0,Cartão Débito,Não,Banho gato
+29/03/2025,Saída,Jantar fora,Lazer,110.0,Cartão Crédito,Não,Restaurante japonês
