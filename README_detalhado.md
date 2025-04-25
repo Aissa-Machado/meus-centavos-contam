@@ -31,7 +31,7 @@ Substituir o arquivo meus_centavos_contam.csv pelo seu próprio CSV
 Data, Tipo, Descrição, Categoria, Valor, Forma de Pagamento, Fixo?, Observações
 
 4. Execute o programa
-python src/main.py
+python src/main.py  ou 
 python3.9 scr/main.py
 
 O programa vai:
