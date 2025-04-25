@@ -45,3 +45,46 @@ if ver_mes == 'S':
     except:
         print("❌ Mês inválido ou sem dados.")
 
+# Filtrar apenas os dados de Saída
+gastos = df[df['Tipo'] == 'Saída']
+
+# Somar os valores por categoria
+gastos_por_categoria = gastos.groupby('Categoria')['Valor'].sum().sort_values(ascending=False)
+
+# Criar gráfico de pizza
+plt.figure(figsize=(8, 8))
+plt.pie(gastos_por_categoria, labels=gastos_por_categoria.index, autopct='%1.1f%%', startangle=90)
+plt.title('Distribuição de Gastos por Categoria')
+plt.axis('equal')  # Deixa o gráfico redondo
+plt.tight_layout()
+plt.savefig('graficos/grafico_pizza.png')
+
+import matplotlib.pyplot as plt
+
+# Gráfico de barras: Gastos por mês
+plt.figure(figsize=(10, 6))
+gastos_por_mes.plot(kind='bar', color='tomato')
+plt.title('Gastos por Mês')
+plt.xlabel('Mês')
+plt.ylabel('Valor (R$)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.savefig('graficos/grafico_barra_mensais.png')
+
+# Agrupar valores por mês e tipo (Entrada/Saída)
+entrada_saida_mensal = df.groupby(['mes_ano', 'Tipo'])['Valor'].sum().unstack().fillna(0)
+
+# Gráfico de barras lado a lado: Entradas vs Saídas por mês
+plt.figure(figsize=(10, 6))
+entrada_saida_mensal.plot(kind='bar', stacked=False, color=['mediumseagreen', 'tomato'])
+plt.title('Entradas vs Saídas por Mês')
+plt.xlabel('Mês')
+plt.ylabel('Valor (R$)')
+plt.xticks(rotation=45)
+plt.legend(title='Tipo')
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.tight_layout()
+plt.savefig('graficos/grafico_entradaXsaida_mensais.png')
+
+
